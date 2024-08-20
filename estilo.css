@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 25px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* INICIO navegador principal */
+#navegador_principal {
+    display: flex;
+    width: 100%;
+    height: 5%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+}
+
+#navegador_principal > li{
+    list-style-type: none;
+    position: relative;
+    background-color: white;
+}
+
+#logomarca{
+    color: rgb(47, 46, 46);
+    font-size: 24px;
+}
+
+#navegador_principal > li > a{
+    text-decoration: none;
+    color: rgb(47, 46, 46);
+    padding: 10px 15px;
+    display: block;
+}
+
+#navegador_principal > li > a:hover{
+    text-decoration: underline;
+    color: rgb(0, 106, 255);
+    transition: 1s;
+}
+
+#navegador_principal ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 1000;
+    list-style-type: none;
+}
+
+#navegador_principal ul li {
+    width: 100%;
+}
+
+#navegador_principal ul li a{
+    margin-top: -7%;
+    padding: 10px;
+    color: rgb(47, 46, 46);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+
+#navegador_principal ul li a:hover {
+    text-decoration: underline;
+    color: rgb(0, 106, 255);
+    transition: 0.5s;
+}
+
+.conteudo_menu ul{
+    display: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#navegador_principal li:hover > ul {
+    display: block;
+}
+
+#navegador_principal ul ul {
+    top: 0;
+    left: 100%;
+}
+
+
+/* FIM navegador principal */
+
+.slider {
+    width: 100%;
+    height: 95%;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    margin: 0;
+    z-index: 1;
+}
+
+.slides {
+    display: flex;
+    width: 500%; /* 100% para cada slide, totalizando 500% para 5 slides */
+    height: 100%;
+    transition: transform 0.6s ease; /* Suaviza a transição entre os slides */
+}
+
+.slide {
+    width: 100%; /* Cada slide ocupa 100% da largura da tela */
+    height: 100%;
+    flex-shrink: 0; /* Garante que o slide não encolha */
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%; /* A imagem ocupa 100% da largura da div slide */
+    height: 100%; /* A imagem ocupa 100% da altura da div slide */
+    object-fit: cover; /* A imagem cobre toda a div sem distorção */
+}
+
+.slides input{
+    display: none;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 200px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -300%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -400%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 200px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: #fff;
+}

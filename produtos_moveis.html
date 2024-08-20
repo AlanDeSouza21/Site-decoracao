@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Produtos-Moveis </title>
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/89cc994101.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo-moveis.css">
+</head>
+<body>
+    <div id="navegador_principal">
+        <div id="logomarca"> LOGOMARCA</div>
+        <li><a href="est.html">Home</a></li>
+        <li id="produtos"><a href="#">Produtos</a>
+            <ul>
+                <li class="conteudo_menu"><a href="#">Móveis</a>
+                    <ul>
+                        <li><a href="#">Sofás</a></li>
+                        <li><a href="#">Mesas de Centro</a></li>
+                        <li><a href="#">Estantes</a></li>
+                        <li><a href="#">Cadeiras</a></li>
+                        <li><a href="#">Mesas de Jantar</a></li>
+                    </ul>
+                </li>
+                <li class="conteudo_menu"><a href="#">Decoração</a>
+                    <ul>
+                        <li><a href="#">Quadros e Arte de Parede</a></li>
+                        <li><a href="#">Vasos Decorativos</a></li>
+                        <li><a href="#">Almofadas e Mantas</a></li>
+                        <li><a href="#">Espelhos</a></li>
+                        <li><a href="#">Relógios de Parede</a></li>
+                    </ul>
+                </li>
+                <li class="conteudo_menu"><a href="#">Iluminação</a>
+                    <ul>
+                        <li><a href="#">Luminárias de Mesa</a></li>
+                        <li><a href="#">Luminárias de Piso</a></li>
+                        <li><a href="#">Lustres</a></li>
+                        <li><a href="#">Abajures</a></li>
+                    </ul>
+                </li>
+                <li class="conteudo_menu"><a href="#">Têxteis</a>
+                    <ul>
+                        <li><a href="#">Tapetes</a></li>
+                        <li><a href="#">Mesas de Centro</a></li>
+                        <li><a href="#">Estantes</a></li>
+                        <li><a href="#">Cadeiras</a></li>
+                        <li><a href="#">Mesas de Jantar</a></li>
+                    </ul>
+                </li>
+                <li class="conteudo_menu"><a href="#">Acessórios</a>
+                    <ul>
+                        <li><a href="#">Porta-retratos</a></li>
+                        <li><a href="#">Velas e Suportes para Velas</a></li>
+                        <li><a href="#">Objetos de cerâmica</a></li>
+                        <li><a href="#">Cestas e caixas organizadoras</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="Serviços.html">Serviços</a></li> <!-- CRIAR MENU ESPECÍFICO -->
+        <li><a href="#">Sobre Nós</a></li> <!-- CRIAR MENU ESPECÍFICO -->
+        <li><a href="#">Contato</a></li> <!-- CRIAR MENU ESPECÍFICO -->
+    </div>
+
+    <div id="Produtos">
+        <section>
+            <h2>FILTROS DE PAGINA</h2>
+        </section>
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>            
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+        
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+
+        <div class="Op_Prod">
+            <div class="desconto"> 25% </div>
+            <div class="central_imagem_icone">
+                <div class="muda_imagem">
+                    <div class="left" onclick="move('esquerda', this)"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="right" onclick="move('direita', this)"><i class="fa-solid fa-caret-right"></i></div>
+                </div>   
+                <div class="imagem">
+                    <div class="imagens_sep primeira">
+                        <img src="imagens/produtos/cadeira.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 2.webp" alt="">
+                    </div>
+                    <div class="imagens_sep">
+                        <img src="imagens/produtos/cadeira 3.webp" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <p>Nome do Produto</p>
+            <p class="desc">Breve descrição</p>
+            <p class="diametros">Diametros</p>
+            <div class="valores"><p class="val_original">R$ 0,00</p><h1>R$ 0,00</h1></div> 
+            <p>Formas de Pagamento</p>
+        </div>
+    </div>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="produtos_moveis.html" class="active">1</a>
+        <a href="produtos_moveis1.html">2</a>
+        <a href="produtos_moveis2.html">3</a>
+        <span class="dots" onclick="Mostrar_paginas()">...</span>
+        <a href="produtos_moveis3.html" class="hidden">4</a>
+        <a href="produtos_moveis4.html" class="hidden">5</a>
+        <a href="produtos_moveis5.html" class="hidden">6</a>
+        <a href="#" class="hidden">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#">&raquo;</a>
+    </div>
+</body>
+</html>

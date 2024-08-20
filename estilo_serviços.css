@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 25px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* INICIO navegador principal */
+#navegador_principal {
+    display: flex;
+    width: 100%;
+    height: 5%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+#navegador_principal > li{
+    list-style-type: none;
+    position: relative;
+    background-color: white;
+}
+
+#logomarca{
+    color: rgb(47, 46, 46);
+    font-size: 24px;
+}
+
+#navegador_principal > li > a{
+    text-decoration: none;
+    color: rgb(47, 46, 46);
+    padding: 10px 15px;
+    display: block;
+}
+
+#navegador_principal > li > a:hover{
+    text-decoration: underline;
+    color: rgb(0, 106, 255);
+    transition: 1s;
+}
+
+#navegador_principal ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 1000;
+    list-style-type: none;
+}
+
+#navegador_principal ul li {
+    width: 100%;
+}
+
+#navegador_principal ul li a{
+    margin-top: -7%;
+    padding: 10px;
+    color: rgb(47, 46, 46);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+
+#navegador_principal ul li a:hover {
+    text-decoration: underline;
+    color: rgb(0, 106, 255);
+    transition: 0.5s;
+}
+
+.conteudo_menu ul{
+    display: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#navegador_principal li:hover > ul {
+    display: block;
+}
+
+#navegador_principal ul ul {
+    top: 0;
+    left: 100%;
+}
+
+/* FIM navegador principal */
+
+#conteúdo_serviço{
+    background-color: white;
+    margin-top: 10px;
+    width: 100%;
+    height: 89%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.serviço{
+    background-color: white;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.serviço div{
+    width: 100%;
+    height: 65%;
+    background-color: white;
+}
+
+.serviço p{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+}
+
+.img_servicos{
+    overflow: hidden;
+    object-fit: contain;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    height: 50px;
+    background-color: rgb(59, 255, 59);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
