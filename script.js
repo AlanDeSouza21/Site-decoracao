@@ -1,10 +1,10 @@
 let count = 1
 document.getElementById("radio1").checked = true
-/*
+
 setInterval(function(){
     nextImage()
-}, 2000)
-*/
+}, 15000)
+
 function nextImage(){
     count++;
     if(count>6){
@@ -46,7 +46,6 @@ function move(direcao, element) {
         indice += 1;   
     }
 
-    // Garantir que o índice não saia dos limites
     if (indice < 0) {
         indice = 0;
     } else if (indice > 2) {
